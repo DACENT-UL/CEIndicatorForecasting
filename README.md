@@ -50,7 +50,6 @@ python -m src.train_models --model all
 ```
 
 
-
 ## Where outputs are written
 
 Forecast CSVs are written under:
@@ -68,7 +67,7 @@ Forecast CSVs are written under:
 - If you want a different indicator, update the indicator argument in each model script call to `load_country_data(...)`.
 
 
-## Preprocessing and model-selection behavior
+## Preprocessing and model selection
 
 - **Linear models (Ridge, Lasso, SVR):** use level data (no differencing) and append a `time_index` feature so models can learn trend.
 - **Tree-based models (Random Forest, XGBoost):** apply first-order differencing only for columns that are non-stationary (ADF test on train split), while stationary columns are kept in levels.
@@ -77,6 +76,7 @@ Forecast CSVs are written under:
 
 
 #
+
 
 
 
