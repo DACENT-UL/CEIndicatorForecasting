@@ -6,7 +6,7 @@ Forecasting framework for EU circular economy indicators. Data included in this 
 
 ### 1) Clone and enter the project
 ```bash
-git clone https://github.com/niamhcmcmahon/CEIndicatorForecasting
+git clone https://github.com/DACENT-UL/CEIndicatorForecasting
 cd CEIndicatorForecasting
 ```
 
@@ -77,5 +77,6 @@ Forecast CSVs are written under:
 
 
 #
+
 
 
