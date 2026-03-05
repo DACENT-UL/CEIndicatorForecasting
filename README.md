@@ -26,7 +26,7 @@ pip install -r requirements.txt
 - `src/train_models.py`: CLI entrypoint to run one model or all models.
 - `src/models/*.py`: per-model training pipelines.
 - `src/loaddata.py`: loader that reads `data/raw/indicator/<indicator>/features` and `.../target`.
-- `src/config.py`: countries, split ratio, hyperparameters, output paths.
+- `src/config.py`: countries, split ratio, hyperparameters, no. of features, output paths.
 
 ## How to run training locally
 
@@ -77,6 +77,7 @@ Forecast CSVs are written under:
 
 
 #
+
 
 
 
