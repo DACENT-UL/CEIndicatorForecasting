@@ -72,10 +72,11 @@ Forecast CSVs are written under:
 - **Linear models (Ridge, Lasso, SVR):** use level data (no differencing) and append a `time_index` feature so models can learn trend.
 - **Tree-based models (Random Forest, XGBoost):** apply first-order differencing only for columns that are non-stationary (ADF test on train split), while stationary columns are kept in levels.
 - **Scaling:** a `StandardScaler` is fit on each training window and applied to the corresponding validation/test window.
-- **Hyperparameter selection:** grid search is evaluated with **one-step-ahead rolling-origin RMSE** on the training split; the best config is then fit once on train and evaluated on the holdout test split.
+- **Hyperparameter selection:** grid search is evaluated with **one-step-ahead rolling-origin RMSE**; the best config is then fit once on train and evaluated on the holdout test split.
 
 
 #
+
 
 
 
